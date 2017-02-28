@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="usedCarsStuff">
+  <head>
+    
+    <title>Used Car Lookup</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="app.css" />
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="app.js"></script>
+    
+  </head>
+  <body ng-controller="UsedCarsController">
+	
+	
+	<h1>Used Cars Lookup</h1>
+	Mileage: <input ng-model="$ctrl.query" />
+    <ul ng-repeat="car in cars">
+	{{car.year}}
+	<li>{{car.make}}</li>
+	<li>{{car.model}}</li>
+	<li>{{car.mileage}}</li>
+	
+	</ul>
+	
+
+  </body>
+</html>
