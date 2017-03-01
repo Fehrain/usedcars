@@ -28,7 +28,7 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 
 
 angular.module('usedCarsStuff', [
-  // ...which depends on the `phoneList` module
+  
   'usedCars'
 ]);
 
