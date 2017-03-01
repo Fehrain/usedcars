@@ -1,0 +1,20 @@
+<div>
+<p>
+        Sort by:
+        <select ng-model="$ctrl.orderProp">
+          <option value="mileHigh">Lowest Mileage</option>
+          <option value="mileLow">Highest Mileage</option>
+		  <!--plan to be able to do two sort options together -->
+		  <option value="olderYear">Older</option>
+		  <option value="newerYear">Newer</option>
+        </select>
+      </p>
+
+	  
+	  <p>
+	  <ul ng-repeat="car in cars">
+	{{car.year}}
+	<li>{{car.make}}</li>
+	<li>{{car.model}}</li>
+	<li>{{car.mileage}}</li>
+</div>

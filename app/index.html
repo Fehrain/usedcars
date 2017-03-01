@@ -14,7 +14,7 @@
 	
 	
 	<h1>Used Cars Lookup</h1>
-	Mileage: <input ng-model="$ctrl.query" />
+	Mileage: <input ng-model="$ctrl.mileage" />
     <ul ng-repeat="car in cars">
 	{{car.year}}
 	<li>{{car.make}}</li>
@@ -22,7 +22,7 @@
 	<li>{{car.mileage}}</li>
 	
 	</ul>
-	
+	<usedCars></usedCars>
 
   </body>
 </html>

@@ -20,7 +20,16 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 		year: "2010",
 		mileage: "85213"
 	}
-	];	
+	];
+	
 });
 	
+
+
+
+angular.module('usedCarsStuff', [
+  // ...which depends on the `phoneList` module
+  'usedCars'
+]);
+
 		
