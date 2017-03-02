@@ -25,10 +25,7 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 	}
 	];
 	
-	$scope.compareCarMileage = function($scope.lowerMileage,$scope.higherMileage){
-		
-		return console.log("hello");
-	}
+	$scope.compareCarMileage = function(){console.log("hello")};
 	
 	
 	

@@ -7,14 +7,18 @@
 	<link rel="stylesheet" href="app.css" />
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="app.js"></script>
+	<script src="usedCarsStuff.js"></script>
     
   </head>
   <body ng-controller="UsedCarsController">
 	
 	
 	<h1>Used Cars Lookup</h1>
-	Mileage: <input ng-model="$ctrl.mileage" />
+	Mileage: Lower<input ng-model="$ctrl.lowerMileage" />
+		<p>	
+		Higher <input ng-model="$ctrl.higherMileage" />
+		 <button type ="button" ng-click="$ctrl.compareCarMileage()">BUTTON</button>
+		
     <ul ng-repeat="car in cars">
 	{{car.year}}
 	<li>{{car.make}}</li>
