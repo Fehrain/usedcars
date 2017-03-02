@@ -10,7 +10,7 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 	
 	
 	
-	$scope.cars = [
+	var carsList = $scope.cars = [
 	{
 		make: 'Toyota',
 		model: 'Corolla',
@@ -25,7 +25,20 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 	}
 	];
 	
-	$scope.compareCarMileage = function(){console.log("hello")};
+	
+	var lowerMileage = $scope.lowerMileage;
+	
+	
+	
+	$scope.compareCarMileage = function(lowMiles,highMiles){
+		
+	console.log(carsList[0]);
+	
+	
+	
+	console.log(lowMiles);
+	console.log(highMiles);
+	};
 	
 	
 	
