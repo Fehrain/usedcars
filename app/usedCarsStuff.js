@@ -46,22 +46,25 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 	
 	var lowerMileage = $scope.lowerMileage;
 	
-	var sortedCarsList = $scope.sortedCarsList = [];
+	
 	
 	
 	$scope.compareCarMileage = function(lowMiles,highMiles){
 	
 	
 	
+	$scope.sortedCarsList = [];
 	for (var x = 0; x < carsList.length; x++)
 	{
+		console.log(x);
+		
 		if (carsList[x].mileage>lowMiles && carsList[x].mileage<highMiles)
 		{
-			sortedCarsList.push(carsList[x]);
+			$scope.sortedCarsList.push(carsList[x]);
+			
 		}
 	}
 	
-	console.log($scope.sortedCarsList);
 	
 	};
 	
