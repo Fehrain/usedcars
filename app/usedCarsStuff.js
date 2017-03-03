@@ -22,17 +22,36 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 		model: 'Civic',
 		year: "2010",
 		mileage: "85213"
+	},
+	{
+		make: 'Honda',
+		model: 'Civic',
+		year: "2011",
+		mileage: "85213"
+	},
+	{
+		make: 'Honda',
+		model: 'Civic',
+		year: "2012",
+		mileage: "85213"
+	},
+	{
+		make: 'Honda',
+		model: 'Civic',
+		year: "2013",
+		mileage: "85213"
 	}
 	];
 	
 	
 	var lowerMileage = $scope.lowerMileage;
 	
+	var sortedCarsList = $scope.sortedCarsList = [];
 	
 	
 	$scope.compareCarMileage = function(lowMiles,highMiles){
 	
-	var sortedCarsList = [];
+	
 	
 	for (var x = 0; x < carsList.length; x++)
 	{
@@ -41,12 +60,9 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 			sortedCarsList.push(carsList[x]);
 		}
 	}
-	console.log(sortedCarsList);
 	
-	console.log("sdfsdf");
+	console.log($scope.sortedCarsList);
 	
-	console.log(lowMiles);
-	console.log(highMiles);
 	};
 	
 	

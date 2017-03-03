@@ -19,7 +19,7 @@
 		Higher <input ng-model="$ctrl.higherMileage" />
 		 <button type ="button" ng-click="compareCarMileage($ctrl.lowerMileage,$ctrl.higherMileage)">Button</button>
 		
-    <ul ng-repeat="car in cars">
+    <ul ng-repeat="car in sortedCarsList">
 	{{car.year}}
 	<li>{{car.make}}</li>
 	<li>{{car.model}}</li>
