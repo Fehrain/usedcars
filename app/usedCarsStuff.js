@@ -44,13 +44,13 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 	];
 	
 	
-<<<<<<< HEAD
+
 	var lowerMileage = $scope.lowerMileage;
 	
 	var sortedCarsList = $scope.sortedCarsList = [];
-=======
+
 	
->>>>>>> origin/master
+
 	
 	var sortedCarsListds = $scope.sortedCarsList = [];
 	
@@ -58,7 +58,7 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 	$scope.compareCarMileage = function(lowMiles,highMiles){
 	
 	
-<<<<<<< HEAD
+
 	
 	for (var x = 0; x < carsList.length; x++)
 	{
@@ -67,7 +67,7 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 			sortedCarsList.push(carsList[x]);
 		}
 	}
-=======
+
 	$scope.sortedCarsList = [];
 	
 	for (var x = 0; x < carsList.length; x++)
@@ -81,7 +81,7 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 			
 		};
 	};
->>>>>>> origin/master
+
 	
 	console.log($scope.sortedCarsList);
 	
