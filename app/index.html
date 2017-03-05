@@ -14,18 +14,22 @@
 	
 	
 	<h1>Used Cars Lookup</h1>
-	Mileage: Lower<input ng-model="$ctrl.lowerMileage" />
-		<p>	
-		Higher <input ng-model="$ctrl.higherMileage" />
-		 <button type ="button" ng-click="compareCarMileage($ctrl.lowerMileage,$ctrl.higherMileage)">Button</button>
+	Please enter Mileage range:<p>
+	Low <input ng-model="$ctrl.lowerMileage" />
+		<p>
+	High <input ng-model="$ctrl.higherMileage" />
+		<p> <button type ="button" ng-click="compareCarMileage($ctrl.lowerMileage,$ctrl.higherMileage)">Filter</button>
 		
-    <ul ng-repeat="car in sortedCarsList">
-	{{car.year}}
-	<li>{{car.make}}</li>
-	<li>{{car.model}}</li>
-	<li>{{car.mileage}}</li>
+	<table id="usedCarsContent">
+	<tr ng-repeat="car in sortedCarsList" id="rowOfCars">
+		<td id="thumbnailImagePreview"><img ng-src="thumbnailplaceholder.jpg" id="placeholderImage"></img>thumbnail image placeholder</td>
+		<td id="carInfoSnippet">
+		
+		<h2 id="carMakeModel">{{car.year}} {{car.make}} {{car.model}}</h1>
+		<h3 id="carMileageNumber">{{car.mileage}} Miles</h2>
+    
 	
-	</ul>
+		</ul>
 	<usedCars></usedCars>
 
   </body>

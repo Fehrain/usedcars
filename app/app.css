@@ -4,3 +4,20 @@ body {
 h1 {
 	text-align: center;
 }
+
+#usedCarsContent{
+	border: 1px solid black;
+}
+#thumbnailImagePreview{
+	padding: 15px;
+}
+
+#carInfoSnippet{
+	padding:10px;
+}
+
+#placeholderImage{
+	height:20px;
+	width:20px;
+}
+#rowOfCars:hover{background-color: #f5f5f5}
