@@ -12,17 +12,32 @@
   </head>
   <body ng-controller="UsedCarsController">
 	
+	<div class="container-fluid">
+	<h1><div><p>Welcome to Andy's inventory of used cars! </div></h1>
 	
-	<h1>Used Cars Lookup</h1>
+	<p>
+	<img src="usedCarLotPic2.jpg" class="img-responsive"></img>
+	<p>
+	
 	Please enter Mileage range:<p>
 	Low <input ng-model="$ctrl.lowerMileage" />
 		<p>
 	High <input ng-model="$ctrl.higherMileage" />
 		<p> <button type ="button" ng-click="compareCarMileage($ctrl.lowerMileage,$ctrl.higherMileage)">Filter</button>
-		
+	<table id="originalUsedCars">
+	<tr ng-repeat="car in cars" id="rowOfCars">
+	<td id="thumbnailImagePreview"><img ng-src="thumbnailplaceholder.jpg" id="placeholderImage"></img></td>
+	<td id="carInfoSnippet">
+	<h2 id="carMakeModel">{{car.year}} {{car.make}} {{car.model}}</h1>
+		<h3 id="carMileageNumber">{{car.mileage}} Miles</h2>
+    
+	
+		</td>
+		</tr>
+		</table>
 	<table id="usedCarsContent">
 	<tr ng-repeat="car in sortedCarsList" id="rowOfCars">
-		<td id="thumbnailImagePreview"><img ng-src="thumbnailplaceholder.jpg" id="placeholderImage"></img>thumbnail image placeholder</td>
+		<td id="thumbnailImagePreview"><img ng-src="thumbnailplaceholder.jpg" id="placeholderImage"></img></td>
 		<td id="carInfoSnippet">
 		
 		<h2 id="carMakeModel">{{car.year}} {{car.make}} {{car.model}}</h1>
@@ -31,6 +46,6 @@
 	
 		</ul>
 	<usedCars></usedCars>
-
+	</div>
   </body>
 </html>

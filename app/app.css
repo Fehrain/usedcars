@@ -5,11 +5,13 @@ h1 {
 	text-align: center;
 }
 
-#usedCarsContent{
+#usedCarsContent, tr{
 	border: 1px solid black;
+	width: auto;
 }
 #thumbnailImagePreview{
-	padding: 15px;
+	padding: 5px;
+	width: 150px;
 }
 
 #carInfoSnippet{
@@ -17,7 +19,7 @@ h1 {
 }
 
 #placeholderImage{
-	height:20px;
-	width:20px;
+	height:auto;
+	width:150px;
 }
 #rowOfCars:hover{background-color: #f5f5f5}

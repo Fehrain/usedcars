@@ -57,7 +57,8 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 	console.log(typeof carsList[0].mileage);
 	$scope.compareCarMileage = function(lowMiles,highMiles){
 	
-	
+	var x = document.getElementById('originalUsedCars');
+    x.style.display = 'none';
 
 	
 	for (var x = 0; x < carsList.length; x++)
