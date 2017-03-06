@@ -24,25 +24,7 @@
 		<p>
 	High <input ng-model="$ctrl.higherMileage" />
 		<p> <button class = "btn btn-primary" ng-click="compareCarMileage($ctrl.lowerMileage,$ctrl.higherMileage)">Filter</button>
-	<!-- <table id="originalUsedCars">
-	<tr ng-repeat="car in cars" id="rowOfCars">
-	<td id="thumbnailImagePreview"><img ng-src="thumbnailplaceholder.jpg" id="placeholderImage"></img></td>
-	<td id="carInfoSnippet">
-	<h2 id="carMakeModel">{{car.year}} {{car.make}} {{car.model}}</h1>
-		<h3 id="carMileageNumber">{{car.mileage}} Miles</h2>
-    
 	
-		</td>
-		</tr>
-		</table>
-	<table id="usedCarsContent">
-	<tr ng-repeat="car in sortedCarsList" id="rowOfCars">
-		<td id="thumbnailImagePreview"><img ng-src="thumbnailplaceholder.jpg" id="placeholderImage"></img></td>
-		<td id="carInfoSnippet">
-		
-		<h2 id="carMakeModel">{{car.year}} {{car.make}} {{car.model}}</h2>
-		<h3 id="carMileageNumber">{{car.mileage}} Miles</h2>
-    -->
 	<div id="originalUsedCars">
 	<div ng-repeat="car in cars" class="row">
 		<div class="col-md-2"><img ng-src="thumbnailplaceholder.jpg" id="placeholderImage"/></div>
