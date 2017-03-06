@@ -15,46 +15,52 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 		make: 'Toyota',
 		model: 'Corolla',
 		year: "2009",
-		mileage: 90123
+		mileage: 90123,
+		engine: 1.8,
+		details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
 		make: 'Honda',
 		model: 'Civic',
 		year: "2010",
-		mileage: 85213
+		mileage: 85213,
+		engine: 1.8,
+		details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
 		make: 'Honda',
 		model: 'Civic',
 		year: "2011",
-		mileage: 60453
+		mileage: 60453,
+		engine: 1.8,
+		details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
 		make: 'Honda',
 		model: 'Civic',
 		year: "2012",
-		mileage: 32218
+		mileage: 32218,
+		engine: 1.8,
+		details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
 		make: 'Honda',
 		model: 'Civic',
 		year: "2013",
-		mileage: 20020
+		mileage: 20020,
+		engine: 1.8,
+		details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	}
 	];
 	
 	
 
-	var lowerMileage = $scope.lowerMileage;
+	
 	
 	var sortedCarsList = $scope.sortedCarsList = [];
 
 	
-
 	
-	var sortedCarsListds = $scope.sortedCarsList = [];
-	
-	console.log(typeof carsList[0].mileage);
 	$scope.compareCarMileage = function(lowMiles,highMiles){
 	
 	var x = document.getElementById('originalUsedCars');
@@ -88,6 +94,10 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 	
 	};
 	
+	$scope.detailsPage = function(){
+		
+		console.log("hi");
+	};
 	
 	
 });
