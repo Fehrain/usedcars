@@ -5,10 +5,7 @@ h1 {
 	text-align: center;
 }
 
-#usedCarsContent, tr{
-	border: 1px solid black;
-	width: auto;
-}
+
 #thumbnailImagePreview{
 	padding: 5px;
 	width: 150px;
