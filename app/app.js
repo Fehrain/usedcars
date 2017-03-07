@@ -1,3 +1,5 @@
 'use strict';
 
-angular.module('usedCarsStuff',[]);
+
+angular.module('usedCarsStuff', []);
+console.log("app.js initialized");
