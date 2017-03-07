@@ -12,6 +12,7 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 	
 	var carsList = $scope.cars = [
 	{
+		location: 0,
 		make: 'Toyota',
 		model: 'Corolla',
 		year: "2009",
@@ -20,6 +21,7 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 		details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
+		location: 1,
 		make: 'Honda',
 		model: 'Civic',
 		year: "2010",
@@ -28,6 +30,7 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 		details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
+		location: 2,
 		make: 'Honda',
 		model: 'Civic',
 		year: "2011",
@@ -36,6 +39,7 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 		details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
+		location: 3,
 		make: 'Honda',
 		model: 'Civic',
 		year: "2012",
@@ -44,6 +48,7 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 		details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
+		location: 4,
 		make: 'Honda',
 		model: 'Civic',
 		year: "2013",
@@ -94,10 +99,11 @@ usedCarsStuff.controller('UsedCarsController', function UsedCarsController($scop
 	
 	};
 	
-	$scope.detailsPage = function(){
+	$scope.detailsPage = function(location){
 		
-		console.log("hi");
-	};
+		window.location.href = 'details'+location+'.html';
+		console.log(location);
+	}
 	
 	
 });

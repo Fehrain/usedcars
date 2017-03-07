@@ -1,0 +1,54 @@
+<!doctype html>
+<html ng-app="usedCarsStuff">
+  <head>
+    
+    <title>Used Car Lookup</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="app.css" />
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="usedCarsStuff.js"></script>
+    
+  </head>
+  <body ng-controller="UsedCarsController">
+	
+	<div class="container-fluid">
+	<h1><div><p>Inventory of Used Cars</div></h1>
+	
+	<p>
+	<img src="usedCarLotPic2.jpg" class="img-responsive"></img>
+	<p>
+	<a href="index.html">Back to inventory</a>
+	<table>
+	<tr>
+	<div class="row">
+	<td><div class="col-md-3"><img src = "pictures/0/picture0.jpg" id="mainImage"></img></div></td>
+	
+	<td><div class="col-md-9" ><h1>{{cars[0].year}} {{cars[0].make}} {{cars[0].model}} </h2>
+							<p>
+								<h2><ul><li>{{cars[0].mileage}} miles</li></ul></h2>
+								<div id="detailText">{{cars[0].details}}</div>
+								
+								</div></td>
+	<tr>
+	<div class="row">
+	<td><a href=#><img src = "pictures/0/picture0.jpg" class="thumbnailImage"></a></img>
+	<a href=#><img src = "pictures/0/picture0-1.jpg" class="thumbnailImage"></img></a>
+	<a href=#><img src = "pictures/0/picture0-2.jpg" class="thumbnailImage"></img></a>
+	<a href=#><img src = "pictures/0/picture0-3.jpg" class="thumbnailImage"></img></a>
+	<a href=#><img src = "pictures/0/picture0-4.jpg" class="thumbnailImage"></img></a></td>
+	
+	</table>
+	
+	
+	
+	
+	
+
+
+
+
+
+
+  </body>
+</html>

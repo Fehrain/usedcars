@@ -32,7 +32,7 @@
 	Click on thumbnail for more pictures and a detailed description of the car
 	<p>
 	<div ng-repeat="car in cars" class="row">
-		<div class="col-md-2"><a href="details.html" ng-click="detailsPage()"><img ng-src="thumbnailplaceholder.jpg" id="placeholderImage"/></a></div>
+		<div class="col-md-2"><a href=# ng-click="detailsPage(car.location)"><img ng-src="thumbnailplaceholder.jpg" id="placeholderImage"/></a></div>
 		<div class="col-md-10"><h2>{{car.year}} {{car.make}} {{car.model}} </h2> <h3><ul><li>{{car.mileage}} miles</li></ul></h3></div>
 		<hr>
 	</div>
@@ -44,7 +44,7 @@
 
 <div ng-repeat="car in sortedCarsList">
 <div class=row" id="usedCarsContent">
-<div class="col-md-2"><img ng-src="thumbnailplaceholder.jpg" id="placeholderImage" /></div>
+<div class="col-md-2"><a href=# ng-click="detailsPage(car.location)"><img ng-src="thumbnailplaceholder.jpg" id="placeholderImage" /></a></div>
 <div class="col-md-10"><h2 id="carMakeModel">{{car.year}} {{car.make}} {{car.model}}</h2> <h3><ul><li>{{car.mileage}} miles</li></ul></h3></div>
 
 </div>
