@@ -1,5 +1,8 @@
 'use strict';
 
-angular.module('usedCarsStuff',[
 
-"usedcars-list"]);
+angular.module('usedCarsStuff', [
+'ngRoute',
+'usedcarslist'
+'usedcarsdetail']);
+

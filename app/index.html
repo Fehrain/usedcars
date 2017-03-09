@@ -7,16 +7,20 @@
 	<link rel="stylesheet" href="app.css" />
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<!--<script src="usedCarsStuff.js"></script>-->
-	<script src="app.js"></script>
-	<script src="usedcarslist.component.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="app.module.js"></script>
+	<script src="app.config.js"></script>
+	<script src="usedcars-detail/usedcarsdetail.component.js"></script>
+	<script src="usedcars-detail/usedcarsdetail.module.js"></script>	
+	<script src="usedcars-list/usedcarslist.component.js"></script>
+	<script src="usedcars-list/usedcarslist.module.js"></script>
     
   </head>
   <body>
+	<div ng-view></div>
 	
-	<usedcarslist></usedcarslist>
-	<!--
-	<div class="container-fluid">
+	
+	<!--<div class="container-fluid">
 	<h1><div><p>Inventory of Used Cars</div></h1>
 	
 	<p>
@@ -27,9 +31,11 @@
 	Low <input ng-model="$ctrl.lowerMileage" />
 		<p>
 	High <input ng-model="$ctrl.higherMileage" />
-		<p> <button class = "btn btn-primary" ng-click="compareCarMileage($ctrl.lowerMileage,$ctrl.higherMileage)">Filter</button>
+		<p> <button class = "btn btn-primary" ng-click="compareCarMileage($ctrl.lowerMileage,$ctrl.higherMileage)">Filter</button>-->
 	
+	<!--<usedcarslist></usedcarslist>-->
 	
+	<!--
 	
 	
 	

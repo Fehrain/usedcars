@@ -1,16 +1,21 @@
-	<div class="container-fluid">
+<div class="container-fluid">
 	<h1><div><p>Inventory of Used Cars</div></h1>
 	
 	<p>
 	<img src="usedCarLotPic2.jpg" class="img-responsive"></img>
 	<p>
 	
-	Please enter Mileage range:<p>
+	<!--Please enter Mileage range:<p>
 	Low <input ng-model="$ctrl.lowerMileage" />
 		<p>
 	High <input ng-model="$ctrl.higherMileage" />
-		<p> <button class = "btn btn-primary" ng-click="compareCarMileage($ctrl.lowerMileage,$ctrl.higherMileage)">Filter</button>
-	
+		<p> <button class = "btn btn-primary" ng-click="compareCarMileage()">Filter</button>-->
+	Sort by: <p>
+	<select ng-model="$ctrl.orderProp">
+          <option value="model">Alphabetical by model</option>
+          <option value="mileage">Lowest Mileage</option>
+		  <option value="-mileage">Highest Mileage</option>
+        </select>
 	
 	
 	
@@ -18,10 +23,11 @@
 	
 	<div id="originalUsedCars">
 	<p>
-	Click on thumbnail for more pictures and a detailed description of the car
 	<p>
-	<div ng-repeat="car in $ctrl.cars" class="row">
-		<div class="col-md-2"><a href="details.html" ng-click="detailsPage()"><img ng-src="thumbnailplaceholder.jpg" id="placeholderImage"/></a></div>
+	<h3>Click on thumbnail for more pictures and a detailed description of the car</h3>
+	<p>
+	<div ng-repeat="car in $ctrl.cars | orderBy: $ctrl.orderProp" class="row">
+		<div class="col-md-2"><a href="#/usedcars-list/{{car.id}}"><img ng-src="/pics/{{car.id}}/{{car.thumbnailImageUrl}}" id="placeholderImage"/></a></div>
 		<div class="col-md-10"><h2>{{car.year}} {{car.make}} {{car.model}} </h2> <h3><ul><li>{{car.mileage}} miles</li></ul></h3></div>
 		<hr>
 	</div>
