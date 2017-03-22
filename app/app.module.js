@@ -3,6 +3,6 @@
 
 angular.module('usedCarsStuff', [
 'ngRoute',
-'usedcarslist'
+'usedcarslist',
 'usedcarsdetail']);
 

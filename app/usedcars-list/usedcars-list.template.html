@@ -27,7 +27,7 @@
 	<h3>Click on thumbnail for more pictures and a detailed description of the car</h3>
 	<p>
 	<div ng-repeat="car in $ctrl.cars | orderBy: $ctrl.orderProp" class="row">
-		<div class="col-md-2"><a href="#/usedcars-list/{{car.id}}"><img ng-src="/pics/{{car.id}}/{{car.thumbnailImageUrl}}" id="placeholderImage"/></a></div>
+		<div class="col-md-2"><a href="#/usedcarsdetail/{{car.id}}"><img ng-src="/pics/{{car.id}}/{{car.thumbnailImageUrl}}" id="placeholderImage"/></a></div>
 		<div class="col-md-10"><h2>{{car.year}} {{car.make}} {{car.model}} </h2> <h3><ul><li>{{car.mileage}} miles</li></ul></h3></div>
 		<hr>
 	</div>
