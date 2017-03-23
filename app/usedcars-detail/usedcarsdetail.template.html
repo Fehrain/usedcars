@@ -9,12 +9,21 @@
 	<div>
 	<h2> Details </h2>
 	<p>
+	<h3>{{$ctrl.car.year}} {{$ctrl.car.make}} {{$ctrl.car.model}}</h3>
 	<div class="row">
-	<div class="col-md-4">picture goes here</div>
-	<div class="col-md-8">{{cars.id}}</div>	
+	
+	<div class="col-md-4"><div class="thumbnail"><img ng-src="{{$ctrl.car.imageUrl}}"></img></div></div>
+	<div class="col-md-8">{{$ctrl.car.details}}
+	<p>
+	<ul>
+	<li>Mileage: {{$ctrl.car.mileage}}</li>
+	<li>Engine size(L): {{$ctrl.car.engine}}</li>
+	</ul>
+	</div>	
 	
 	</div>
 	
 	
 	
 	</div>
+	<a href="#/used-cars-list">Home</a>

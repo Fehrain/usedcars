@@ -10,7 +10,7 @@ angular.
         when('/usedcars-list', {
           template: '<usedcarslist></usedcarslist>'
         }).
-        when('/usedcarsdetail/:id', {
+        when('/cars/:id', {
           template: '<usedcarsdetail></usedcarsdetail>'
         }).
         otherwise('/usedcars-list');
